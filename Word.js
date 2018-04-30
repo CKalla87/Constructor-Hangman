@@ -4,11 +4,11 @@ var Word = function(myWord) {
     
     this.myWord = myWord;
     this.letters = [];
-    this.underscoreds = [];
+    this.underscores = [];
     this.splitWord = function() {
-        this.letters = this.myWord.split("");
-        numberUnderscoresNeeded = this.letters.lenght;
-        console.log(this.underscores.join(" "));
+    this.letters = this.myWord.split("");
+    numberUnderscoresNeeded = this.letters.length;
+    console.log(this.underscores.join(" "));
     }
 
     this.generateLetters = function() {
@@ -18,6 +18,6 @@ var Word = function(myWord) {
             this.letters[i].showCharacter();
         }
     }
-}
+};
 
 module.exports = Word;

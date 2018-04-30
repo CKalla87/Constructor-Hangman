@@ -1,18 +1,19 @@
-var Letter = function(char) {
-    this.char = char.toUpperCase();
+var Letter = function(character) {
+    this.character = character.toUpperCase();
 
-    this.letterGuessed = false;
+    this.letterGuessedCorrectly = false;
 
     this.showCharacter = function() {
-        if (this.letterGuessed) {
-            console.log(this.char)
+        if (this.letterGuessedCorrectly) {
+            console.log(this.character)
         } else {
             //console.log("_");
         }
     }
 }
 
-//var newLetter = new Letter ("b") ;
-//newLetter.showCharacter();
+//Testing
+// var letterTest = new Letter ("a");
+// letterTest .showCharacter();
 
 module.exports = Letter;
